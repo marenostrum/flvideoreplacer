@@ -361,11 +361,11 @@ var flvideoreplacerListener = {
 			<param name=\"autoplay\" value=\""+autoplay+"\">\
 			<param name=\"controller\" value=\"true\">\
 			<param name=\"loop\" value=\"false\">\
-			<param name=\"scale\" value=\"tofit\">\
+			<param name=\"scale\" value=\"aspect\">\
 			<embed src=\""+videourl+"\" \
 			    width=\""+videowidth+"\" \
 			    height=\""+videoheight+"\" \
-			    scale=\"tofit\" \
+			    scale=\"aspect\" \
 			    type=\"video/quicktime\" \
 			    autoplay=\""+autoplay+"\" \
 			    controller=\"true\" \

@@ -20,11 +20,4 @@
     </toolbarpalette>
 
     <toolbarbutton id="flvideoreplacerbutton-1" label="&FlashVideoReplacerTitle;" tooltiptext="&FlashVideoReplacerTitle;" oncommand="window.openDialog('chrome://flvideoreplacer/content/options.xul', 'flvideoreplacer-prefs', 'chrome,centerscreen,alwaysRaised');" class="toolbarbutton-1 chromeclass-toolbar-additional flvideoreplacerbutton"/>
-    
-    <statusbar id="status-bar">
-	<statusbarpanel id="flvideoreplacerstatusbar" tooltiptext="&FlashVideoReplacerTitle;" onclick="window.openDialog('chrome://flvideoreplacer/content/options.xul', 'flvideoreplacer-prefs', 'chrome,centerscreen,alwaysRaised');">
-	    <image id="flvideoreplacerstatusimage"/>
-	</statusbarpanel>
-    </statusbar>
-
 </overlay>
