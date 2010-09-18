@@ -1,7 +1,5 @@
 @namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
-#flvideoreplacerstatusimage{
-  list-style-image: url("chrome://flvideoreplacer/content/images/statusbar.png");
-}
+
 #flvideoreplacerbutton-1,
 #wrapper-flvideoreplacerbutton-1
   {list-style-image: url("chrome://flvideoreplacer/content/images/toolbarbutton.png");}
