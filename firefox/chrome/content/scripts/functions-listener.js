@@ -282,7 +282,11 @@ var flvideoreplacerListener = {
 			    .getService(Components.interfaces.nsIPrefService)
 			    .getBranch("flashblock.");
 
-			var whitelist = this.prefs.getCharPref("whitelist");
+			try{
+			    var whitelist = this.prefs.getCharPref("whitelist");
+			}catch(e){
+			    var whitelist = "";
+			}
 
 			if(!whitelist.match(aString)){
 
@@ -290,6 +294,34 @@ var flvideoreplacerListener = {
 
 			    //get text from strbundle
 			    var message = strbundle.getFormattedString("flashblock", [ aSite ]);
+			    var messagetitle = strbundle.getString("flvideoreplaceralert");
+			    //alert user
+			    var alertsService = Components.classes["@mozilla.org/alerts-service;1"]
+				.getService(Components.interfaces.nsIAlertsService);
+			    alertsService.showAlertNotification("chrome://flvideoreplacer/content/images/logo_large.png",
+			    messagetitle, message,
+			    false, "", null);
+			}
+		    }
+		    if (enableditems.match(/\{84b24861-62f6-364b-eba5-2e5e2061d7e6\}/)) {//foxpvr integration
+
+			//access preferences interface
+			this.prefs = Components.classes["@mozilla.org/preferences-service;1"]
+			    .getService(Components.interfaces.nsIPrefService)
+			    .getBranch("extensions.mediaplayerconnectivity.");
+
+			try{
+			    var whitelist = this.prefs.getCharPref("whiteList");
+			}catch(e){
+			    var whitelist = "";
+			}
+
+			if(!whitelist.match(aString)){
+
+			    replacevideo = false;
+
+			    //get text from strbundle
+			    var message = strbundle.getFormattedString("mpc", [ aSite ]);
 			    var messagetitle = strbundle.getString("flvideoreplaceralert");
 			    //alert user
 			    var alertsService = Components.classes["@mozilla.org/alerts-service;1"]
