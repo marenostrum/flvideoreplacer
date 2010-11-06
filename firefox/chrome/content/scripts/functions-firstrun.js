@@ -61,7 +61,7 @@ var flvideoreplacerFirstrun = {
 		//set preferences
 		this.prefs.setCharPref("version",current);
 
-		if(ver !== "1.0.4" && ver !== "1.0.3" && ver !== "1.0.2" && ver !== "1.0.1"){//actions specific for extension updates
+		if(ver !== "1.0.5" && ver !== "1.0.4" && ver !== "1.0.3" && ver !== "1.0.2" && ver !== "1.0.1"){//actions specific for extension updates
 
 		    window.openDialog('chrome://flvideoreplacer/content/options.xul', 'flvideoreplacer-prefs', 'chrome,centerscreen');
 

@@ -35,7 +35,6 @@
 		    <menupopup>
 			<menuitem label="Quicktime (video/quicktime)" value="quicktime" selected="true" />
 			<menuitem label="Windows Media Player (application/x-mplayer2)" value="x-mplayer2" />
-			<!--<menuitem label="HTML5 (experimental)" value="html5" />-->
 		    </menupopup>
 		</menulist>
 	    </hbox>
